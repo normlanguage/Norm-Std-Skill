@@ -2,9 +2,9 @@
 
 This skill describes the public `std` module shipped with Norm. It is generated from the Norm standard-library sources and their `@Document` annotations.
 
-- Norm source revision: `590311f0`
+- Norm source revision: `a704d53d1b55afa59a5fa69a9f19183a8312381b`
 - Standard library module: `std` version `1`
-- Source: https://github.com/normlanguage/Norm/tree/590311f0/norm/stdlib/std
+- Source: https://github.com/normlanguage/Norm/tree/a704d53d1b55afa59a5fa69a9f19183a8312381b/norm/stdlib/std
 - API export command: `norm docs norm/stdlib/std --output build/std-api --skill SKILL.md --strict`
 
 ## Usage
@@ -49,3 +49,4 @@ Use the `std.json`, `std.yaml`, `std.xml`, `std.http`, and `std.websocket` packa
 ## Source of truth
 
 The Norm source files and `@Document` annotations are authoritative. This file is a generated distribution artifact. Regenerate it when the pinned Norm revision changes; do not hand-edit API signatures.
+
