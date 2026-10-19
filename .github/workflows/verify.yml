@@ -10,9 +10,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: normlanguage/Norm
-          ref: a704d53d1b55afa59a5fa69a9f19183a8312381b
+          ref: codex/skill-distribution
           path: Norm
       - name: Check pinned skill
         shell: pwsh
         run: ./scripts/verify.ps1 -NormRoot Norm
+
 
