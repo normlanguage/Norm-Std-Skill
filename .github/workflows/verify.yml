@@ -7,6 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: normlanguage/Norm
+          ref: a704d53d1b55afa59a5fa69a9f19183a8312381b
+          path: Norm
       - name: Check pinned skill
         shell: pwsh
-        run: ./scripts/verify.ps1 -NormRoot ../Norm
+        run: ./scripts/verify.ps1 -NormRoot Norm
+
