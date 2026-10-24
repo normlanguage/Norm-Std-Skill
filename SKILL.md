@@ -4,7 +4,7 @@ This skill describes the public `std` module shipped with Norm. It is generated 
 
 - Norm source revision: `291eb53b8b6afa3668522d5f6774f3f34f960cc7`
 - Standard library module: `std` version `1`
-- Source: https://github.com/normlanguage/Norm/tree/codex/skill-distribution/norm/stdlib/std
+- Source: https://github.com/normlanguage/Norm/tree/291eb53b8b6afa3668522d5f6774f3f34f960cc7/norm/stdlib/std
 - API export command: `norm docs norm/stdlib/std --output build/std-api --skill SKILL.md --strict`
 
 ## Usage

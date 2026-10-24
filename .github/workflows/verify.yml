@@ -7,13 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - id: pinned
+        name: Read pinned Norm revision
+        shell: pwsh
+        run: |
+          $revision = ./scripts/verify.ps1 -PrintRevision
+          "revision=$revision" >> $env:GITHUB_OUTPUT
       - uses: actions/checkout@v4
         with:
           repository: normlanguage/Norm
-          ref: codex/skill-distribution
+          ref: ${{ steps.pinned.outputs.revision }}
           path: Norm
       - name: Check pinned skill
         shell: pwsh
         run: ./scripts/verify.ps1 -NormRoot Norm
-
-
