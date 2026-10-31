@@ -6,8 +6,9 @@ Published agent skill for Norm's standard library. `SKILL.md` is generated from 
 
 From a Norm checkout at the pinned revision:
 
-```text
-norm docs norm/stdlib/std --output build/std-api --skill SKILL.md --strict
+```powershell
+./scripts/generate.ps1 -NormRoot ../Norm
+./scripts/verify.ps1 -NormRoot ../Norm
 ```
 
 The generated file must be committed together with the Norm source revision it describes. Use the repository verification script before publishing.
