@@ -21,3 +21,11 @@ jobs:
       - name: Check pinned skill
         shell: pwsh
         run: ./scripts/verify.ps1 -NormRoot Norm
+      - uses: normlanguage/registry/.github/actions/setup-norm@90b4d247fa4f5f2b620924d2cbc0553e89843700
+        with:
+          version: 0.27.23
+      - name: Verify reproducible API Skill
+        shell: pwsh
+        run: |
+          ./scripts/generate.ps1 -NormRoot Norm
+          git diff --exit-code -- SKILL.md
